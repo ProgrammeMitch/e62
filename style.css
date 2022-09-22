@@ -14,8 +14,13 @@ body {
 }
 
 .header {
-    background-color: orange;
+    background-color: #d57f00;
     height: 10vh;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .main {
@@ -147,7 +152,56 @@ a {
         background: linear-gradient(to left, transparent, rgba(255, 228, 225, 0.26));
     }
 
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .menubar {
+        width: 5vh;
+        height: 1vh;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .menubarholder {
+        padding: 2vh;
+        display: inline-block;
+    }
+
+    .links {
+        height: 50vh;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 10vh;
+        right: 2vh;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-left: 15vh;
+        transition: 1s;
+        border-bottom-left-radius: 10%;
+        box-shadow: -50px 40px 60px 50px black;
+    }
+
+    .link_content {
+        position: absolute;
+        top: 2vh;
+        left: 3vh;
+        width: 70%;
+    }
+
+    .link_content a {
+        padding: 30px 8px 30px 4px;
+        text-decoration: none;
+        letter-spacing: 0.05vh;
+        color: #d57f00;
+        display: block;
+        font-weight: bold;
+    }
+
     .top-background {
+        margin-top: 5vh;
         height: 80vh;
     }
 
@@ -258,7 +312,7 @@ a {
         width: 70%;
         margin-left: 12%;
         position: absolute;
-        top: 86vh;
+        top: 81.5vh;
         border: 2px solid mistyrose;
     }
 
@@ -273,12 +327,24 @@ a {
     }
 
     .success {
-        border: none;
         margin: 3vh;
         width: 85%;
         color: white;
         font-size: 150%;
         text-align: center;
+    }
+
+    @keyframes link_slide {
+        0% {
+            right: -20vh;
+        }
+    }
+
+    @keyframes link_slide_out {
+        100% {
+            right: -25vh;
+            width: 0;
+        }
     }
 
     @keyframes slide {
@@ -605,6 +671,51 @@ a {
         width: 720px;
     }
 
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 12vh;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .menubarholder {
+        display: none;
+    }
+
+    .links {
+        height: 100%;
+        display: flex;
+        background-color: transparent;
+        position: unset;
+        box-shadow: none;
+        width: 115vh;
+    }
+
+    .link_content {
+        position: relative;
+        display: flex;
+        top: 0;
+        left: 15vh;
+        width: 100%;
+    }
+
+    .link_content a {
+        border-left: 1px solid black;
+        width: fit-content;
+        text-decoration: none;
+        letter-spacing: 0.05vh;
+        color: white;
+        padding: 4vh 5vh;
+        font-weight: bold;
+    }
+
+    .top-background {
+        margin-top: 10vh;
+    }
+
     .bottom-background {
         height: 59vh;
     }
@@ -671,6 +782,7 @@ a {
         letter-spacing: 4px;
         width: 36%;
         margin-left: 31.5%;
+        top: 85vh;
     }
 
     .bottom-background {
