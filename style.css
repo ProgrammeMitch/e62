@@ -8,9 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 250vh;
-    border-top: 2vh solid #d57f00;
-    border-right: 2vh solid #d57f00;
-    border-left: 2vh solid #d57f00;
+    border-top: 3vh solid #d57f00;
 }
 
 .header {
@@ -175,7 +173,6 @@ a {
         position: fixed;
         z-index: 1;
         top: 10vh;
-        right: 2vh;
         background-color: #111;
         overflow-x: hidden;
         padding-left: 15vh;
@@ -203,12 +200,13 @@ a {
     .top-background {
         margin-top: 5vh;
         height: 80vh;
+        background-color: white;
     }
 
     #slideshow {
         overflow: hidden;
         height: 80vh;
-        width: 330px;
+        width: 360px;
         margin: 0 auto;
     }
 
@@ -220,7 +218,7 @@ a {
     .slide {
         float: left;
         height: 80vh;
-        width: 330px;
+        width: 360px;
     }
 
     #slide-one-header {
@@ -312,7 +310,7 @@ a {
         width: 70%;
         margin-left: 12%;
         position: absolute;
-        top: 81.5vh;
+        top: 82.6vh;
         border: 2px solid mistyrose;
     }
 
@@ -353,27 +351,27 @@ a {
         }
 
         30% {
-            margin-left: -330px;
+            margin-left: -360px;
         }
 
         50% {
-            margin-left: -330px;
+            margin-left: -360px;
         }
 
         60% {
-            margin-left: -660px;
+            margin-left: -720px;
         }
 
         70% {
-            margin-left: -660px;
+            margin-left: -720px;
         }
 
         80% {
-            margin-left: -990px;
+            margin-left: -1080px;
         }
 
         90% {
-            margin-left: -990px;
+            margin-left: -1080px;
         }
     }
 }
@@ -387,19 +385,19 @@ a {
     #slideshow {
         overflow: hidden;
         height: 80vh;
-        width: 388px;
+        width: 420px;
         margin: 0 auto;
     }
 
     .slide-wrapper {
-        width: 1552px;
+        width: 1680px;
         animation: slide 15s ease infinite;
     }
 
     .slide {
         float: left;
         height: 80vh;
-        width: 388px;
+        width: 420px;
     }
 
     @keyframes slide {
@@ -408,27 +406,27 @@ a {
         }
 
         30% {
-            margin-left: -388px;
+            margin-left: -420px;
         }
 
         50% {
-            margin-left: -388px;
+            margin-left: -420px;
         }
 
         60% {
-            margin-left: -776px;
+            margin-left: -840px;
         }
 
         70% {
-            margin-left: -776px;
+            margin-left: -840px;
         }
 
         80% {
-            margin-left: -1164px;
+            margin-left: -1260px;
         }
 
         90% {
-            margin-left: -1164px;
+            margin-left: -1260px;
         }
     }
 }
@@ -442,19 +440,19 @@ a {
     #slideshow {
         overflow: hidden;
         height: 80vh;
-        width: 448px;
+        width: 480px;
         margin: 0 auto;
     }
 
     .slide-wrapper {
-        width: 1792px;
+        width: 1920px;
         animation: slide 15s ease infinite;
     }
 
     .slide {
         float: left;
         height: 80vh;
-        width: 448px;
+        width: 480px;
     }
 
     @keyframes slide {
@@ -463,27 +461,27 @@ a {
         }
 
         30% {
-            margin-left: -448px;
+            margin-left: -480px;
         }
 
         50% {
-            margin-left: -448px;
+            margin-left: -480px;
         }
 
         60% {
-            margin-left: -896px;
+            margin-left: -960px;
         }
 
         70% {
-            margin-left: -896px;
+            margin-left: -960px;
         }
 
         80% {
-            margin-left: -1344px;
+            margin-left: -1440px;
         }
 
         90% {
-            margin-left: -1344px;
+            margin-left: -1440px;
         }
     }
 }
@@ -497,19 +495,19 @@ a {
     #slideshow {
         overflow: hidden;
         height: 80vh;
-        width: 508px;
+        width: 540px;
         margin: 0 auto;
     }
 
     .slide-wrapper {
-        width: 2032px;
+        width: 2160px;
         animation: slide 15s ease infinite;
     }
 
     .slide {
         float: left;
         height: 80vh;
-        width: 508px;
+        width: 540px;
     }
 
     .success {
@@ -526,27 +524,27 @@ a {
         }
 
         30% {
-            margin-left: -508px;
+            margin-left: -540px;
         }
 
         50% {
-            margin-left: -508px;
+            margin-left: -540px;
         }
 
         60% {
-            margin-left: -1016px;
+            margin-left: -1080px;
         }
 
         70% {
-            margin-left: -1016px;
+            margin-left: -1080px;
         }
 
         80% {
-            margin-left: -1524px;
+            margin-left: -1620px;
         }
 
         90% {
-            margin-left: -1524px;
+            margin-left: -1620px;
         }
     }
 }
@@ -850,6 +848,21 @@ a {
         width: 87%;
     }
 
+    .link_content a {
+        border-left: 1px solid black;
+        width: fit-content;
+        text-decoration: none;
+        letter-spacing: 0.05vh;
+        color: white;
+        font-size: 75%;
+        padding: 3.5vh 3vh;
+        font-weight: bold;
+    }
+
+    .our-services {
+        top: 81vh;
+    }
+
     @keyframes slide {
         20% {
             margin-left: 0px;
@@ -913,6 +926,24 @@ a {
         margin-top: 10vh;
     }
 
+    .link_content {
+        left: 25vh;
+    }
+
+    .link_content a {
+        border-left: 1px solid black;
+        width: fit-content;
+        text-decoration: none;
+        letter-spacing: 0.05vh;
+        color: white;
+        padding: 4vh 5vh;
+        font-weight: bold;
+    }
+
+    .our-services {
+        top: 85vh;
+    }
+
     input[type=text] {
         width: 93.5%;
         letter-spacing: 2px;
@@ -964,6 +995,10 @@ a {
         height: 80vh;
         width: 1280px;
         margin: 0 auto;
+    }
+
+    .link_content {
+        left: 38vh;
     }
 
     .slide-wrapper {
