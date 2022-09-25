@@ -18,7 +18,8 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 1;    
+    border-bottom: 1px solid white;
 }
 
 .main {
@@ -111,6 +112,20 @@ input[type=text] {
 .footer {
     background-color: orange;
     height: 20vh;
+}
+
+.address {
+    text-align: center;
+    margin-top: 6vh;
+    font-size: 70%;
+    letter-spacing: .5vh;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 60%;
+    letter-spacing: .4vh;
 }
 
 a {
@@ -846,6 +861,14 @@ a {
 
     input[type=text] {
         width: 87%;
+    }
+
+    .link_content {
+        position: relative;
+        display: flex;
+        top: 0;
+        left: 40vh;
+        width: 100%;
     }
 
     .link_content a {
